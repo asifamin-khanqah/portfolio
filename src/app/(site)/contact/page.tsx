@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ButtonLink } from "@/components/ui/button-link";
 import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
-import { socials } from "@/data/site";
+import { profile, socials } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -43,12 +43,12 @@ export default function ContactPage() {
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[color:var(--muted)]">
                 Direct line
               </p>
-              <p className="mt-4 text-lg font-semibold">asif.frontend@email.com</p>
+              <p className="mt-4 text-lg font-semibold">{profile.email}</p>
               <p className="mt-2 text-sm text-[color:var(--muted)]">
                 Prefer a quick call? I am open to short discovery chats.
               </p>
               <div className="mt-6">
-                <ButtonLink href="mailto:asif.frontend@email.com">
+                <ButtonLink href={`mailto:${profile.email}`}>
                   Email me
                 </ButtonLink>
               </div>

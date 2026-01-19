@@ -17,11 +17,11 @@ const sora = Sora({
 
 export const metadata: Metadata = {
   title: {
-    default: "Asif | Frontend Developer",
-    template: "%s | Asif",
+    default: "Asif Amin | Full Stack Web Developer",
+    template: "%s | Asif Amin",
   },
   description:
-    "Portfolio of Asif, a frontend developer crafting clean, responsive, and high-performing UI.",
+    "Portfolio of Asif Amin, a full stack web developer crafting clean, responsive, and high-performing experiences.",
 };
 
 export default function RootLayout({

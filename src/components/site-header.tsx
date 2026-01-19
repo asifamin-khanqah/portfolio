@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { navLinks } from "@/data/site";
+import { navLinks, profile } from "@/data/site";
 import { Container } from "@/components/ui/container";
 import { NavLink } from "@/components/nav-link";
 import { ThemeToggle } from "@/components/theme-toggle";
@@ -14,7 +14,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-[color:var(--border)] bg-[color:var(--surface-glass)] backdrop-blur">
       <Container className="flex items-center justify-between py-4">
         <Link href="/" className="font-display text-lg tracking-tight">
-          Asif.
+          {profile.name}
         </Link>
         <div className="flex items-center gap-3">
           <nav

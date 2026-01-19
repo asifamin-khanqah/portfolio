@@ -1,3 +1,12 @@
+export const profile = {
+  name: "Asif Amin",
+  role: "Full Stack Web Developer",
+  summary:
+    "In all the codes I write, I follow best practices and learn new languages quickly. I love working on new ideas to bring distinct innovation into every system. Full-stack is the goal.",
+  email: "yourname@gmail.com",
+  location: "Srinagar, India",
+};
+
 export const navLinks = [
   { href: "/", label: "Home" },
   { href: "/work", label: "Work" },
@@ -6,136 +15,141 @@ export const navLinks = [
 ];
 
 export const socials = [
-  { label: "LinkedIn", href: "#" },
+  { label: "Gmail", href: "mailto:yourname@gmail.com" },
   { label: "GitHub", href: "#" },
-  { label: "Dribbble", href: "#" },
+  { label: "LinkedIn", href: "#" },
+  { label: "Twitter", href: "#" },
+  { label: "AngelList", href: "#" },
+  { label: "Medium", href: "#" },
+  { label: "Portfolio", href: "#" },
 ];
 
 export const stats = [
-  { label: "Years of experience", value: "5+" },
-  { label: "Projects shipped", value: "28" },
-  { label: "Avg. Lighthouse", value: "95+" },
+  { label: "Hours of coding", value: "1300+" },
+  { label: "Projects shipped", value: "3+" },
+  { label: "Mentoring since", value: "2022" },
 ];
 
 export const services = [
   {
-    title: "Product UI",
+    title: "Frontend development",
     description:
-      "Interface design translated into robust, responsive, and accessible layouts.",
+      "Accessible, responsive UIs with clean layout systems and modern React.",
   },
   {
-    title: "Design systems",
+    title: "Backend development",
     description:
-      "Component libraries, tokens, and documentation that scale across teams.",
+      "Rails-backed APIs, databases, and full-stack product flows.",
   },
   {
-    title: "Frontend architecture",
-    description: "Type-safe patterns, state design, and scalable UI structure.",
+    title: "Testing & TDD",
+    description:
+      "Reliable codebases with RSpec and test-driven workflows.",
   },
   {
-    title: "Performance polish",
+    title: "Mentoring & collaboration",
     description:
-      "Speed optimization, motion restraint, and cleanup for production-ready UX.",
+      "Remote pair programming, code reviews, and team-first delivery.",
   },
 ];
 
 export const steps = [
   {
-    title: "Strategy",
+    title: "Plan",
     description:
-      "Clarify goals, user flows, and performance constraints before design.",
+      "Align on goals, scope, and the most impactful user flows first.",
   },
   {
     title: "Build",
     description:
-      "Create reusable UI blocks with consistent spacing and visual rhythm.",
+      "Create modular components and APIs with clean, readable structure.",
   },
   {
     title: "Refine",
     description:
-      "Test, polish, and align with product metrics for confident launches.",
+      "Test, polish, and iterate for performance and reliability.",
   },
 ];
 
 export const projects = [
   {
-    title: "Atlas Analytics",
-    type: "SaaS Platform",
+    title: "Math Magician",
+    type: "React App",
     description:
-      "Realtime KPI dashboards with a tokenized UI kit and fast filters.",
-    impact: "Reduced onboarding time by 22 percent.",
-    tags: ["Next.js", "TypeScript", "Tailwind", "Radix UI"],
-    year: "2024",
-  },
-  {
-    title: "Copper Checkout",
-    type: "Commerce",
-    description:
-      "Conversion-first checkout flow with resilient edge cases.",
-    impact: "Improved mobile conversion by 18 percent.",
-    tags: ["Next.js", "Payments", "A11y", "Edge"],
+      "A three-page React app that centers on basic mathematical calculations.",
+    impact: "Built for clarity, fast interaction, and simple UX.",
+    tags: ["React", "JavaScript", "CSS3"],
     year: "2023",
   },
   {
-    title: "Northwind Ops",
-    type: "Internal tools",
+    title: "To-Do List",
+    type: "Productivity",
     description:
-      "Unified operations dashboard for inventory, CRM, and fulfillment.",
-    impact: "Cut ops task time by 34 percent.",
-    tags: ["React", "TypeScript", "TanStack", "Storybook"],
+      "A task organizer for tracking completed and pending activities.",
+    impact: "Focus on simple flows and persistent task state.",
+    tags: ["HTML", "CSS", "JavaScript", "Webpack"],
     year: "2023",
   },
   {
-    title: "Aurora Careers",
-    type: "Marketing",
+    title: "Awesome Book",
+    type: "Library",
     description:
-      "High-impact recruiting site with editorial storytelling and SEO.",
-    impact: "Tripled qualified applicant flow.",
-    tags: ["Next.js", "SEO", "CMS", "Content"],
-    year: "2022",
-  },
-  {
-    title: "Keystone Finance",
-    type: "Fintech",
-    description:
-      "Portfolio tracking UI with multi-currency support and AI summaries.",
-    impact: "Increased retention by 16 percent.",
-    tags: ["React", "Charts", "Accessibility", "Design system"],
+      "An online library for adding and removing books from a collection.",
+    impact: "Clear CRUD interactions with a minimal interface.",
+    tags: ["HTML", "CSS", "JavaScript"],
     year: "2022",
   },
 ];
 
 export const timeline = [
   {
-    role: "Senior Frontend Developer",
-    company: "Northwind Labs",
-    period: "2022 - Present",
+    role: "Mentor (Volunteer)",
+    company: "Microverse (Remote)",
+    period: "Oct 2022 - Present",
     summary:
-      "Led the design system and rebuilt analytics UI for 12 global teams.",
-  },
-  {
-    role: "Frontend Engineer",
-    company: "Copper Commerce",
-    period: "2020 - 2022",
-    summary:
-      "Owned checkout and mobile web revamp focused on conversion and speed.",
-  },
-  {
-    role: "UI Developer",
-    company: "Studio Delta",
-    period: "2018 - 2020",
-    summary: "Delivered brand sites and interactive campaigns for SaaS teams.",
+      "Mentored junior web developers through code reviews, improved code organization, and offered guidance to sustain motivation.",
   },
 ];
 
-export const skills = [
-  "Next.js",
-  "TypeScript",
-  "Tailwind CSS",
-  "React Query",
-  "Zustand",
-  "Radix UI",
-  "Storybook",
-  "Playwright",
-  "Figma",
+export const education = [
+  {
+    school: "Microverse",
+    period: "Jul 2022 - Present",
+    detail:
+      "Remote full stack program with 1300+ hours mastering algorithms, data structures, Ruby, Rails, JavaScript, React, and Redux. Built with pair programming, gitflow, and daily standups.",
+  },
+  {
+    school: "Gandhi Memorial College Srinagar",
+    period: "Jan 2018 - Dec 2022",
+    detail:
+      "Bachelor of Commerce (B.COM) focused on business and commerce fundamentals.",
+  },
+];
+
+export const skillGroups = [
+  {
+    title: "Front-End",
+    items: ["JavaScript", "React", "Redux", "jQuery", "HTML5", "CSS3"],
+  },
+  {
+    title: "Back-End",
+    items: ["Ruby", "Rails", "MySQL"],
+  },
+  {
+    title: "Tools & Methods",
+    items: [
+      "Git",
+      "GitHub",
+      "Heroku",
+      "Netlify",
+      "Mobile/Responsive Development",
+      "RSpec",
+      "TDD",
+      "Chrome DevTools",
+    ],
+  },
+  {
+    title: "Professional",
+    items: ["Remote Pair Programming", "Teamwork", "Mentoring"],
+  },
 ];

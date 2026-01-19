@@ -2,7 +2,7 @@ import { ButtonLink } from "@/components/ui/button-link";
 import { Card } from "@/components/ui/card";
 import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
-import { projects, services, stats, steps } from "@/data/site";
+import { profile, projects, services, stats, steps } from "@/data/site";
 
 const featuredProjects = projects.slice(0, 3);
 
@@ -14,15 +14,13 @@ export default function HomePage() {
           <div className="grid items-start gap-10 lg:grid-cols-[1.2fr_0.8fr]">
             <div className="space-y-6 fade-up">
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[color:var(--muted)]">
-                Frontend developer
+                {profile.role}
               </p>
               <h1 className="font-display text-4xl leading-tight sm:text-5xl lg:text-6xl">
-                Clean interfaces, precise spacing, and UI systems that scale.
+                Building clean, responsive web experiences end to end.
               </h1>
               <p className="max-w-xl text-lg text-[color:var(--muted)]">
-                I am Asif, a frontend developer focused on responsive design,
-                performance, and accessibility. I build calm, glassy user
-                experiences that feel fast and intuitive.
+                {profile.summary}
               </p>
               <div className="flex flex-wrap gap-4">
                 <ButtonLink href="/contact">Let&apos;s work together</ButtonLink>
@@ -31,9 +29,9 @@ export default function HomePage() {
                 </ButtonLink>
               </div>
               <div className="flex flex-wrap gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--muted)]">
-                <span>Available for freelance</span>
                 <span>Remote friendly</span>
-                <span>Based in PK</span>
+                <span>Mentor</span>
+                <span>{profile.location}</span>
               </div>
             </div>
             <div className="glass-panel rounded-3xl p-6 sm:p-8 fade-up">
@@ -56,8 +54,8 @@ export default function HomePage() {
                 ))}
               </div>
               <div className="mt-6 rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface-glass)] p-4 text-sm text-[color:var(--muted)]">
-                Building frontend experiences with a focus on design systems,
-                performance, and crisp responsiveness.
+                Building full-stack web experiences with a focus on clean UI,
+                reliable APIs, and crisp responsiveness.
               </div>
             </div>
           </div>
